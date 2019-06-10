@@ -1,266 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-     <script src="https://kit.fontawesome.com/24466b86ce.js"></script>  <!-- iconos -->
 
-    <link rel="stylesheet" href="inicio.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Menús</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/24466b86ce.js"></script> <!-- iconos -->
 
-    <!-- barra de navegcacio  -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="inicio.html">LetsParty</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Inicio <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Salir</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Disabled</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <link rel="stylesheet" href="inicio.css" />
+</head>
+
+<body>
+
+  <!-- barra de navegcacio  -->
+
+  <nav
+    class="navbar navbar-expand-lg navbar-dark bg-dark flex-column flex-md-row bd-navbar navbar fixed-top navbar-light bg-light">
+    ==0
+    <a class="navbar-brand" href="inicio.html">LetsParty</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Salir</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
   <!-- barra de navegacion inicio-->
-    <main>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-2 sidebar">
-            <ul class="list-group lista-de-bares">
-              <li class="list-group-item ">  <i class="fas fa-cookie"></i>  Menu</li>
-              <li class="list-group-item boton-bar">  <i class="fas fa-cheese"></i>  Desayuno</li>
-              <li class="list-group-item boton-bar"><i class="fas fa-fish"></i> Comida</li>
-              <li class="list-group-item boton-bar"> <i class="fas fa-hamburger"></i> Cena</li>
-              <li class="list-group-item boton-bar"> <i class="fas fa-cocktail"></i> Vinos y Bebidas</li>
-            </ul>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2 sidebar">
+          <ul class="list-group lista-de-bares">
+            <li class="list-group-item "> <i class="fas fa-cookie"></i> Menu</li>
+            <li class="list-group-item boton-bar"> <i class="fas fa-cheese"></i> Desayuno</li>
+            <li class="list-group-item boton-bar"><i class="fas fa-fish"></i> Comida</li>
+            <li class="list-group-item boton-bar"> <i class="fas fa-hamburger"></i> Cena</li>
+            <li class="list-group-item boton-bar"> <i class="fas fa-cocktail"></i> Vinos y Bebidas</li>
+          </ul>
 
-  <!-- barra de navegcacion  segunda parte  -->
-            <ul class="list-group lista-acciones" style="margin-top:20px;">
-              <li class="list-group-item ">Reservaciones</li>
-              <li class="list-group-item" style="padding-left:5px;padding-right:5px;">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Fecha</label>
-                  <input
-                    type="date"
-                    class="form-control"
-                    aria-describedby="fecha"
-                  />
-                </div>
-              </li>
-              <li class="list-group-item ">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Horario</label>
-                  <input
-                    type="time"
-                    class="form-control"
-                    aria-describedby="horario"
-                  />
-                </div>
-              </li>
-            </ul>
-              <!-- barra de navegcacion  fin  -->
-          </div>
-          <div class="col-sm-10">
-            <div class="bd-example">
-              <div
-                id="carouselExampleCaptions"
-                class="carousel slide"
-                data-ride="carousel"
-              >
-                <ol class="carousel-indicators">
-                  <li
-                    data-target="#carouselExampleCaptions"
-                    data-slide-to="0"
-                    class="active"
-                  ></li>
-                  <li
-                    data-target="#carouselExampleCaptions"
-                    data-slide-to="1"
-                  ></li>
-                  <li
-                    data-target="#carouselExampleCaptions"
-                    data-slide-to="2"
-                  ></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img
-                      src="https://www.thespruceeats.com/thmb/w_o-T_1BRvQep8n7nSW3VTAOwBs=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/Bar-cocktails-GettyImages-121834909-58d202ba5f9b581d72377d53.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>First slide label</h5>
-                      <p>
-                        Nulla vitae elit libero, a pharetra augue mollis
-                        interdum.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="https://www.irishtimes.com/polopoly_fs/1.3276588.1510047403!/image/image.jpg_gen/derivatives/box_620_330/image.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Second slide label</h5>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="https://www.cetrella.com/content/slides/ewp2015-cetrella-5036.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl
-                        consectetur.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <a
-                  class="carousel-control-prev"
-                  href="#carouselExampleCaptions"
-                  role="button"
-                  data-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a
-                  class="carousel-control-next"
-                  href="#carouselExampleCaptions"
-                  role="button"
-                  data-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="sr-only">Next</span>
-                </a>
+          <!-- barra de navegcacion  segunda parte  -->
+          <ul class="list-group lista-acciones" style="margin-top:20px;">
+            <li class="list-group-item ">Reservaciones</li>
+            <li class="list-group-item" style="padding-left:5px;padding-right:5px;">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Fecha</label>
+                <input type="date" class="form-control" aria-describedby="fecha" />
               </div>
-            </div>
-
-
-            <div class="card" style="width: 18rem;">
-              <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Desayuno</h5>
-                <p class="card-text">Waffles beglas con salchicha.</p>
+            </li>
+            <li class="list-group-item ">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Horario</label>
+                <input type="time" class="form-control" aria-describedby="horario" />
               </div>
+            </li>
+          </ul>
+          <!-- barra de navegcacion  fin  -->
+        </div>
+        <div class="col-sm-10">
+          <div class="bd-example">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://www.thespruceeats.com/thmb/w_o-T_1BRvQep8n7nSW3VTAOwBs=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/Bar-cocktails-GettyImages-121834909-58d202ba5f9b581d72377d53.jpg"
+                    class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>
+                      Nulla vitae elit libero, a pharetra augue mollis
+                      interdum.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://www.irishtimes.com/polopoly_fs/1.3276588.1510047403!/image/image.jpg_gen/derivatives/box_620_330/image.jpg"
+                    class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://www.cetrella.com/content/slides/ewp2015-cetrella-5036.jpg" class="d-block w-100"
+                    alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>
+                      Praesent commodo cursus magna, vel scelerisque nisl
+                      consectetur.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-
-
-
           </div>
         </div>
       </div>
-    </main>
-    <footer class="bg-dark">
-      <div class="container">
-        <div class="row">
-          <div class="col">Acerca de</div>
-          <div class="col">Contacto</div>
-          <div class="col">Ubicación</div>
-        </div>
+    </div>
+  </main>
+  <footer class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col">Acerca de</div>
+        <div class="col">Contacto</div>
+        <div class="col">Ubicación</div>
       </div>
-    </footer>
-
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $.urlParam = function(name) {
-        var results = new RegExp("[\?&]" + name + "=([^&#]*)").exec(
-          window.location.href
-        );
-        return results[1] || 0;
-      };
-
-      // $.urlParam('id');
-
-      console.log("parametro escogido es  : " + $.urlParam("id"));
-
-      console.log(
-        " ya sabemos que bar es. ahora hay que hace run get a bar/id para obtener los datos del bar"
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script>
+    $.urlParam = function (name) {
+      var results = new RegExp("[\?&]" + name + "=([^&#]*)").exec(
+        window.location.href
       );
+      return results[1] || 0;
+    };
+
+    // $.urlParam('id');
+
+    console.log("parametro escogido es  : " + $.urlParam("id"));
+
+    console.log(
+      " ya sabemos que bar es. ahora hay que hace run get a bar/id para obtener los datos del bar"
+    );
 
 
-    document.getElemenByClassName(".boton-bar").addEventListener("click",function(){
+    document.getElemenByClassName(".boton-bar").addEventListener("click", function () {
       // fetch ("localhost:8080/bar/"+$.urlParam('id'))
       // .then(function(rsp){ return rsp.json()})
       // .then(ActualizarTarjeta(data) })
     })
 
-function ActualizarTarjeta (data){
+    function ActualizarTarjeta(data) {
 
-    $(".card .card-text").text(data.desayuno )
-    $(".card .card-title").text(data.nombre )
-    $(".card .horario").text(data.horario )
+      $(".card .card-text").text(data.desayuno)
+      $(".card .card-title").text(data.nombre)
+      $(".card .horario").text(data.horario)
 
 
-}
+    }
 
-ActualizarTarjeta("barbbla ")
+    ActualizarTarjeta("barbbla ")
 
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
