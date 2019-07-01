@@ -1,4 +1,4 @@
-Body {
+body {
     margin: 0;
     padding: 0;
     
@@ -38,9 +38,8 @@ Body {
         background-size: cover;
 }
 .login-box-reg{
-    width: 300px; 
-    
-    background: hsla(212, 59%, 32%, 0.6);
+    width: 380px;     
+    background: hsla(212, 59%, 32%, 0.3);
     color: #fff;
     top: 50%;
     left: 50%;
@@ -52,7 +51,10 @@ Body {
     margin:10px;
 
 }
+.login-box-reg:hover{
+    background: hsla(212, 59%, 32%, 0.8);
 
+}
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgba(255, 255, 255, 0.836);
     opacity: 1; /* Firefox */
@@ -130,7 +132,7 @@ Body {
    
 }
 .login-box-reg .link:hover {
-    font-size: 18px;
+   /* font-size: 18px;*/
     color: rgb(247, 247, 247);
     text-align: justify;
 }
