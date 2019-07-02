@@ -1,0 +1,15 @@
+body{
+    background-color: azure;
+    font-family: Arial, Helvetica;
+    background-size: cover; 
+    table-layout: inherit;
+    text-align: center;
+
+}
+
+table.sortable thead {
+    background-color:#eee;
+    color:#666666;
+    font-weight: bold;
+    cursor: default;
+}
