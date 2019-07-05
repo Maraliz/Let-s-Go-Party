@@ -4,6 +4,9 @@ body{
     background-size: cover; 
     table-layout: inherit;
     text-align: center;
+    background-origin: padding-box;
+    
+   
 
 }
 
@@ -12,4 +15,6 @@ table.sortable thead {
     color:#666666;
     font-weight: bold;
     cursor: pointer;
+    
+    
 }
