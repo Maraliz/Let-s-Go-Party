@@ -15,10 +15,6 @@
   This basically means: do what you want with it.
 */
 
-// $('.datepicker').datepicker({
-//   format: 'mm/dd/yyyy',
-//   startDate: '-3d'
-// });
 
 var stIsIE = /*@cc_on!@*/false;
 

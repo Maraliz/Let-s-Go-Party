@@ -8,21 +8,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <link href='datepicker.css' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="Reservaciones.css">
 </head>
 
 <body>
-
-
-
-  <div style="display:flex; justify-content: center;">
-    <div id="datepicker-inicio" data-date="07/05/2019"></div>
-    <!-- <input type="hidden" id="fecha_inicial"> -->
-    <div id="datepicker-fin" data-date="07/12/2019"></div>
-    <!-- <input type="hidden" id="fecha_final"> -->
-  </div>
-
+  
   <table class="table table-hover sortable" cellspacing="0" width="100%">
     <thead>
       <tr>
@@ -52,56 +42,17 @@
         <td>Larry the Bird</td>
         <td>@twitter</td>
       </tr>
-
+      
     </tbody>
-
+    
   </table>
   <div>
-    <button type="button" class="btn btn-dark">Resgistro</button>
-    <button type="button" class="btn btn-dark">Cliente</button>
-    <button type="button" class="btn btn-dark">Bar</button>
+      <button type="button" class="btn btn-dark">Resgistro</button>
+      <button type="button" class="btn btn-dark">Cliente</button>
+      <button type="button" class="btn btn-dark">Bar</button>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-
-  <!-- Datepicker -->
-
-  <script src='datepicker.js' type='text/javascript'></script>
   <script src="prueba.js"></script>
-  <script type="text/javascript">
-    var fechaInicial = null;
-    var fechaFinal = null;
-
-    $(document).ready(function () {
-
-      //inicializo los dos pickers  ( inicio y fin)
-      $('#datepicker-inicio').datepicker();
-      $('#datepicker-fin').datepicker();
-
-
-      $('#datepicker-inicio').on('changeDate', function () {
-        //cuando le cambies la fecha al date picker "inicio" extraer nuevo valoe
-        // $('#fecha_inicial').val(
-        //   $('#datepicker-inicio').datepicker('getFormattedDate')
-        // );
-
-        //asigno nuevo valor a fechaInicial  y tambien lo saco a consola
-        fechaInicial = $('#datepicker-inicio').datepicker('getFormattedDate')
-        console.log("fecha inicial cambiada a :", fechaInicial)
-      });
-
-      $('#datepicker-fin').on('changeDate', function () {
-        // $('#fecha_final').val(
-        //   $('#datepicker-fin').datepicker('getFormattedDate')
-        // );
-        fechaFinal = $('#datepicker-fin').datepicker('getFormattedDate');
-        console.log("fecha final cambiada a :", fechaFinal);
-      });
-
-    });
-  </script>
 </body>
 
 </html>
