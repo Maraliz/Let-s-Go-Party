@@ -496,3 +496,43 @@ var forEach = function(object, block, context) {
 		resolve.forEach(object, block, context);
 	}
 };
+
+var fechaInicial = null;
+    var fechaFinal = null;
+
+    $(document).ready(function () {
+
+      //inicializo los dos pickers  ( inicio y fin)
+      $('#datepicker-inicio').datepicker('setDate', 'today');
+      $('#datepicker-fin').datepicker('setDate', 'today');
+
+
+      $('#datepicker-inicio').on('changeDate', function () {
+        //cuando le cambies la fecha al date picker "inicio" extraer nuevo valoe
+        // $('#fecha_inicial').val(
+        //   $('#datepicker-inicio').datepicker('getFormattedDate')
+        // );
+
+        //asigno nuevo valor a fechaInicial  y tambien lo saco a consola
+        fechaInicial = $('#datepicker-inicio').datepicker('getFormattedDate')
+        console.log("fecha inicial cambiada a :", fechaInicial)
+      });
+
+      $('#datepicker-fin').on('changeDate', function () {
+        // $('#fecha_final').val(
+        //   $('#datepicker-fin').datepicker('getFormattedDate')
+        // );
+        fechaFinal = $('#datepicker-fin').datepicker('getFormattedDate');
+        console.log("fecha final cambiada a :", fechaFinal);
+      });
+
+    });
+
+    var resizeTimer;
+$(window).resize(function() {
+     // Start of resize event
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function() {
+      // End of resize event
+      }, 250); // Only execute this function after a gap of 250ms
+});
