@@ -6,7 +6,8 @@ body{
     text-align: center;
     background-origin: padding-box;
     min-height: 100vh;
-    background: 
+    background: url();
+    
 }
 
 .btn .btn-dark, .scope {
